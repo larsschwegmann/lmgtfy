@@ -7,8 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E9DE4DE1C46B34700E3E438 /* CommandLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E9DE4D91C46B32100E3E438 /* CommandLine.framework */; };
 		3EA8504F1C46AD4D00CB1512 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8504E1C46AD4D00CB1512 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E9DE4D81C46B32100E3E438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E9DE4D31C46B32000E3E438 /* CommandLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D06884319674D7D00BBFAAC;
+			remoteInfo = CommandLine;
+		};
+		3E9DE4DA1C46B32100E3E438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E9DE4D31C46B32000E3E438 /* CommandLine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D06884E19674D7D00BBFAAC;
+			remoteInfo = CommandLineTests;
+		};
+		3E9DE4DC1C46B32F00E3E438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E9DE4D31C46B32000E3E438 /* CommandLine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D06884219674D7D00BBFAAC;
+			remoteInfo = CommandLine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3EA850491C46AD4D00CB1512 /* CopyFiles */ = {
@@ -23,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E9DE4D31C46B32000E3E438 /* CommandLine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandLine.xcodeproj; path = CommandLine/CommandLine.xcodeproj; sourceTree = "<group>"; };
 		3EA8504B1C46AD4D00CB1512 /* lmgtfy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lmgtfy; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA8504E1C46AD4D00CB1512 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,15 +58,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9DE4DE1C46B34700E3E438 /* CommandLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E9DE4D41C46B32000E3E438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E9DE4D91C46B32100E3E438 /* CommandLine.framework */,
+				3E9DE4DB1C46B32100E3E438 /* CommandLineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3EA850421C46AD4C00CB1512 = {
 			isa = PBXGroup;
 			children = (
+				3E9DE4D31C46B32000E3E438 /* CommandLine.xcodeproj */,
 				3EA8504D1C46AD4D00CB1512 /* lmgtfy */,
 				3EA8504C1C46AD4D00CB1512 /* Products */,
 			);
@@ -76,6 +113,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3E9DE4DD1C46B32F00E3E438 /* PBXTargetDependency */,
 			);
 			name = lmgtfy;
 			productName = lmgtfy;
@@ -107,12 +145,35 @@
 			mainGroup = 3EA850421C46AD4C00CB1512;
 			productRefGroup = 3EA8504C1C46AD4D00CB1512 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3E9DE4D41C46B32000E3E438 /* Products */;
+					ProjectRef = 3E9DE4D31C46B32000E3E438 /* CommandLine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3EA8504A1C46AD4D00CB1512 /* lmgtfy */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3E9DE4D91C46B32100E3E438 /* CommandLine.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommandLine.framework;
+			remoteRef = 3E9DE4D81C46B32100E3E438 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3E9DE4DB1C46B32100E3E438 /* CommandLineTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommandLineTests.xctest;
+			remoteRef = 3E9DE4DA1C46B32100E3E438 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EA850471C46AD4D00CB1512 /* Sources */ = {
@@ -124,6 +185,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E9DE4DD1C46B32F00E3E438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CommandLine;
+			targetProxy = 3E9DE4DC1C46B32F00E3E438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3EA850501C46AD4D00CB1512 /* Debug */ = {
@@ -239,6 +308,7 @@
 				3EA850541C46AD4D00CB1512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
